@@ -6,7 +6,6 @@
 
 // You can delete this file if you're not using it
 export const onInitialClientRender = () => {
-    setTimeout(function() {
         document.getElementById("___loader").style.display = "none"
-    })
+
 }

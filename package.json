@@ -1,5 +1,6 @@
 {
-  "name": "gatsby-starter-default",
+  "homepage": "https://github.com/CapacityBay-WebMentor/Official_website.git",
+  "name": "gatsby-capabay",
   "private": true,
   "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
@@ -25,6 +26,7 @@
     "sal.js": "^0.8.4"
   },
   "devDependencies": {
+    "gh-pages": "^3.1.0",
     "prettier": "2.2.1"
   },
   "keywords": [
@@ -32,6 +34,8 @@
   ],
   "license": "0BSD",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build", 
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",

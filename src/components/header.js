@@ -12,7 +12,7 @@ import { colors } from "@material-ui/core";
 const Header = ({ siteTitle }) => (
 
   <header>
-   
+   <div id="___loader"></div>
     <Navbar expand="lg" className="navbar" >
     <Navbar.Brand href="#home"><img src={logo} className="logo"/></Navbar.Brand>
     <Navbar.Toggle aria-controls="navbarResponsive" />
