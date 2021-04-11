@@ -8,13 +8,13 @@ import logo from '../../images/logo.svg'
 import { colors } from "@material-ui/core";
 import { useState, useEffect } from 'react'
 
-const setNav = ()=>{
-  if(document.documentElement.scrollTop >= 70){
-    // alert('reached 50')
-  }
-}
 
-window.addEventListener('scroll', setNav)
+// const setNav = ()=>{
+//   if(document.documentElement.scrollTop >= 70){
+//     // alert('reached 50')
+//   }
+// }
+// window.addEventListener('scroll', setNav)
 const Header = ({ siteTitle }) => {
   const [nav, setNav]  = useState(false)
 
@@ -46,7 +46,7 @@ const Header = ({ siteTitle }) => {
     
   </header>
 )
-}
+ }
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
