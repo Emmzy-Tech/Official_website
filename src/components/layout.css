@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap');
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -10,7 +11,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  font-family: 'Karla', sans-serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -591,49 +592,60 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
-.navbar{
-  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
-}
-.navbar.active{
-  display: ;
-}
-.logo{
-  margin-top: 26px;
-  width: 140px;
-}
 .try{
-  background: url(../images/landing_bg.jpg) no-repeat 
-    center center fixed; 
+  /* background: url(../../images/landing_bg.jpg) no-repeat  
+    center center fixed; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   height: 100vh;
   width: 100%;
-  padding-bottom: 200px;
+  z-index: 1;
 }
-.try h1, p{
+.try img{
+  position: absolute;
+  width: 100%;
+}
+.try h1{
   font-size: 3rem;
   color: white;
   z-index: 4;
-  margin-top: 200px;
+  top: 100px;
   margin-left: 140px;
+  position: absolute;
 }
 .try p{
   font-size: 1.5em;
-}
-.try .btn{
   margin-left: 140px;
-}
-#___loader{
+  color: white;
   position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: red;
-  z-index: 9949;
+  top: 370px;
 }
-nav .navbar-nav li a{
-  color: white !important;
+
+.try .MuiTypography-h1{
+  font-weight: 900;
+}
+.try h1{
+    font-size: 3rem;
+    color: white;
+    z-index: 4;
+    margin-top: 200px;
+    margin-left: 140px;
+  }
+  .try p{
+    font-size: 1.3rem;
+  }
+  .try .btn{
+    margin-left: 140px;
+  }
+  .sticky-nav{
+    width: 100%;
+    height: 160px;
+    background-color: red;
+    position: absolute;
+    z-index: 200;
+    opacity: .5;
   }
 @media only screen and (max-width: 480px) {
   html {
