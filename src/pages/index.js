@@ -24,10 +24,11 @@ const useStyles = makeStyles({
     fontWeight: 600,
     background: 'linear-gradient(45deg, #042d73, #04befe)',
     "@media (max-width: 600px)": {
-      marginTop: 170,
-      marginLeft: 120,
+      marginTop: 220,
+      marginLeft: 125,
       padding: '10px 40px'
     }
+    
   }
 }) 
 

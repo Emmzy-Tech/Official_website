@@ -668,3 +668,13 @@ pre tt:after {
     display: none;
   }
 }
+@media only screen and (max-width: 600px) {
+  .try h1{
+    margin-top: 20px;
+    margin-left: 130px;
+    font-size: 3rem;
+  }
+  .try p{
+    display: none;
+  }
+}
