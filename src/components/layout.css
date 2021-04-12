@@ -621,15 +621,16 @@ pre tt:after {
   margin-left: 140px;
   color: white;
   position: absolute;
-  top: 370px;
+  top: 310px;
 }
 
 .try h1{
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: white;
     z-index: 4;
-    margin-top: 200px;
+    margin-top: 150px;
     margin-left: 140px;
+    font-weight: 900;
   }
   .try .btn{
     margin-left: 140px;

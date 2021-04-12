@@ -14,13 +14,12 @@ import Typography from '@material-ui/core/Typography';
 import InputBase from '@material-ui/core/InputBase';
 import Badge from '@material-ui/core/Badge';
 import MenuItem from '@material-ui/core/MenuItem';
-import Menu from '@material-ui/core/Menu';
+import Menu from '@material-ui/icons/Menu';
 import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import MailIcon from '@material-ui/icons/Mail';
 import NotificationsIcon from '@material-ui/icons/Notifications';
-import MoreIcon from '@material-ui/icons/MoreVert';
 import { red } from "@material-ui/core/colors"
 
 // const setNav = ()=>{
@@ -32,17 +31,19 @@ import { red } from "@material-ui/core/colors"
 const Header = ({ siteTitle }) => {
   const [nav, setNav]  = useState(false)
   const useStyles = makeStyles({
-    appBarTransparent:{
-      backgroundColor: red,
+    header: {
+      backgroundColor: "transparent",
+      color: "white",
+      boxShadow: "0 0 0 0"
     }
   })
-  const classes = useStyles();
+  const classes = useStyles()
  return(
   <header>
-      <AppBar position="sticky" style={{backgroundColor:"", color:"white"}}>
+      <AppBar position="sticky" className={classes.header}>
         <Toolbar>
         <IconButton aria-label="app" color="inherent">
-          <Menu />
+        <Menu style={{color: 'white'}}/>
         </IconButton>
         <Typography variant="h6">Capacity</Typography>
         </Toolbar>

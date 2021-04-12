@@ -17,21 +17,23 @@ const useStyles = makeStyles({
   root:{
     border: 0,
     borderRadius: 22,
-    marginLeft: 140,
-    marginTop: 450,
+    marginLeft: 143,
+    marginTop: 400,
     color: 'white',
     padding: '10px 60px',
+    fontWeight: 600,
     background: 'linear-gradient(45deg, #042d73, #04befe)',
     "@media (max-width: 600px)": {
       marginTop: 170,
-      marginLeft: 85,
+      marginLeft: 120,
+      padding: '10px 40px'
     }
   }
 }) 
 
 function BtnStyled(){
   const classes = useStyles()
-  return <Button className={classes.root}>My button test</Button>
+  return <Button className={classes.root}>Application</Button>
 }
 
 // const theme = createMuiTheme();
