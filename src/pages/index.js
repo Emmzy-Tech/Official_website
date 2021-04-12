@@ -18,12 +18,12 @@ const useStyles = makeStyles({
     border: 0,
     borderRadius: 22,
     marginLeft: 140,
-    marginTop: 520,
+    marginTop: 450,
     color: 'white',
     padding: '10px 60px',
     background: 'linear-gradient(45deg, #042d73, #04befe)',
     "@media (max-width: 600px)": {
-      marginTop: 225,
+      marginTop: 170,
       marginLeft: 85,
     }
   }
