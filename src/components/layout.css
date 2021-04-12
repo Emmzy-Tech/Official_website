@@ -606,6 +606,7 @@ pre tt:after {
 .try img{
   position: absolute;
   width: 100%;
+  top: 0;
 }
 .try h1{
   font-size: 3rem;

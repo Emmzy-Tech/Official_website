@@ -6,7 +6,7 @@ import '../Layout.css'
 import logo from '../../images/logo.svg'
 import { colors } from "@material-ui/core";
 import { useState, useEffect } from 'react'
-import { fade, makeStyles } from '@material-ui/core/styles';
+import { fade, makeStyles, useStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
@@ -21,6 +21,7 @@ import AccountCircle from '@material-ui/icons/AccountCircle';
 import MailIcon from '@material-ui/icons/Mail';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import MoreIcon from '@material-ui/icons/MoreVert';
+import { red } from "@material-ui/core/colors"
 
 // const setNav = ()=>{
 //   if(document.documentElement.scrollTop >= 70){
@@ -30,14 +31,20 @@ import MoreIcon from '@material-ui/icons/MoreVert';
 // window.addEventListener('scroll', setNav)
 const Header = ({ siteTitle }) => {
   const [nav, setNav]  = useState(false)
-
+  const useStyles = makeStyles({
+    appBarTransparent:{
+      backgroundColor: red,
+    }
+  })
+  const classes = useStyles();
  return(
   <header>
-      <AppBar position="sticky">
+      <AppBar position="sticky" style={{backgroundColor:"", color:"white"}}>
         <Toolbar>
-        <IconButton>
+        <IconButton aria-label="app" color="inherent">
           <Menu />
         </IconButton>
+        <Typography variant="h6">Capacity</Typography>
         </Toolbar>
       </AppBar>
   </header>
