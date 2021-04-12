@@ -16,6 +16,8 @@
     }
     /* Global Styling Ends  */
 
+    /* Just trying to see if my pull request works */
+
 /* Plan the future starts  */
 .future{
     background: linear-gradient(90deg,#2a77c7 0,#5ec7df);
@@ -35,8 +37,7 @@
     margin: 0 -15px;
 }
 .row>.col, .row>[class*=col-] {
-    padding-right: 8px;
-    padding-left: 8px;
+    padding: 0 8px 0 8px;
 }
 .future h2 {
     font-size: 72px;
