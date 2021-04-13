@@ -37,7 +37,7 @@ function Home2(props) {
                         <div className="d-lg-block d-lg-block">
                         <p>College is worth it. Your future is worth it. You are worth it.</p>
                         </div>
-                        <a href="#">Learn why college matters ></a>
+                        <a href="#">Learn why college matters &#62</a>
                   </div>
               </div>
               <div className="col-sm-4">
@@ -51,7 +51,7 @@ function Home2(props) {
                         <div className="d-lg-block d-lg-block">
                         <p>There are lots of options available to you. We can help you find them.</p>
                         </div>
-                        <a href="#">Learn how to pay for college ></a>
+                        <a href="#">Learn how to pay for college &#62</a>
                   </div>
               </div>
               <div className="col-sm-4">
@@ -65,7 +65,7 @@ function Home2(props) {
                         <div className="d-lg-block d-lg-block">
                         <p>The path may seem unclear. We can help you find your&nbsp;way.</p>
                         </div>
-                        <a href="#">Learn how to get to college ></a>
+                        <a href="#">Learn how to get to college &#62</a>
                   </div>
               </div>
           </div>
