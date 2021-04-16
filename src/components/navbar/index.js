@@ -22,6 +22,7 @@ import MailIcon from '@material-ui/icons/Mail';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import { red } from "@material-ui/core/colors"
 
+<<<<<<< HEAD
 // const setNav = ()=>{
 //   if(document.documentElement.scrollTop >= 70){
 //     // alert('reached 50')
@@ -38,6 +39,18 @@ const Header = ({ siteTitle }) => {
     }
   })
   const classes = useStyles()
+=======
+const setNav = ()=>{
+  window.addEventListener('scroll', setNav)
+  if(document.documentElement.scrollTop >= 70){
+    // alert('reached 50')
+  }
+}
+
+
+const Header = ({ siteTitle }) => {
+
+>>>>>>> master
  return(
   <header>
       <AppBar position="sticky" className={classes.header}>

@@ -1,0 +1,200 @@
+<<<<<<< HEAD
+=======
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    }
+    
+    body{
+        font-family: sans-serif;
+    }
+    /* Global Styling Start */
+    .col {
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width: 100%;
+    }
+    /* Global Styling Ends  */
+
+    /* Just trying to see if my pull request works */
+
+/* Plan the future starts  */
+.future{
+    background: linear-gradient(90deg,#2a77c7 0,#5ec7df);
+    width: 100%;
+    padding: 100px 0 151px 0;
+}
+.container{
+    width: 100%;
+    padding: 0 15px;
+    padding-left: 15px;
+    margin: 0 auto;
+    /* background-color: red; */
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+.row>.col, .row>[class*=col-] {
+    padding: 0 8px 0 8px;
+}
+.future h2 {
+    font-size: 72px;
+    line-height: 86px;
+    margin-bottom: 34px;
+    color: #fff;
+}
+.future .balloon-icon {
+    position: absolute;
+    right: 215px;
+    top: 27px;
+}
+.future .future-texts p {
+    max-width: 600px;
+    margin-bottom: 120px;
+    font-size: 22px;
+    line-height: 28px;
+    color: #fff;
+    outline: none;
+    font-weight: 100;
+}
+.future .col {
+    background-color: #fff;
+    position: relative;
+    min-height: 334px;
+    padding: 32px;
+    height: 100%;
+}
+.future .col a {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #000;
+}
+.future .col h5 {
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 17px;
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+.future .col h5:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 4px;
+    background-color: #000;
+    display: block;
+}
+.future .col.cut-corner {
+    background: linear-gradient(-45deg, transparent 30px,#fff 0);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+@media (min-width: 1280px){
+.container {
+    max-width: 1250px;
+}
+}
+@media (min-width: 576px){
+.col-sm-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+}
+@media (min-width: 768px){
+.col-md-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+}
+@media (max-width: 1199.98px){
+.future .future-texts p {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 80px;
+    max-width: 490px;
+}
+.future .col {
+    min-height: 240px;
+    padding: 22px;
+}
+.future .row>[class*=col-] {
+    padding-right: 8px;
+    padding-left: 8px;
+}
+.future .balloon-icon {
+    right: 62px;
+}
+.future h2 {
+    font-size: 50px;
+    line-height: 60px;
+}
+.future .col h5 {
+    font-size: 16px;
+    line-height: 22px;
+}
+}
+@media (max-width: 991.98px){
+.future .col .img-holder {
+    height: 64px;
+    min-height: 64px;
+    margin-bottom: 20px;
+}
+.future .balloon-icon {
+    right: 62px;
+}
+.future h2 {
+    line-height: 34px;
+    margin-bottom: 60px;
+}
+.future .future-text p {
+    margin-bottom: 50px;
+}
+}
+@media (max-width: 767.98px){
+.future .balloon-icon {
+    right: 26px;
+    top: 3px;
+}
+.future h2 {
+    font-size: 42px;
+    line-height: 45px;
+    letter-spacing: .5px;
+    margin-bottom: 30px;
+    max-width: 200px;
+}
+.future .future-text p {
+    margin-bottom: 34px;
+    font-size: 16px;
+}
+.future .col .img-holder {
+    height: 95px;
+    min-height: auto;
+    padding-top: 0;
+    margin-bottom: 0;
+}
+.future .col h5 {
+    max-width: 144px;
+    margin-bottom: 17px;
+}
+.future .col {
+    min-height: auto;
+    padding: 20px 0 40px 20px;
+    margin-bottom: 20px;
+    height: auto;
+}
+.future .row>[class*=col-] {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+}
+/* Plan the future ends  */
+>>>>>>> master
