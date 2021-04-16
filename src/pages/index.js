@@ -27,8 +27,27 @@ const useStyles = makeStyles({
       marginTop: 220,
       marginLeft: 125,
       padding: '10px 40px'
+    },
+       "@media (max-width: 411px)": {
+      marginTop: 140,
+      marginLeft: 125,
+      padding: '10px 40px'
+    },
+    "@media (max-width: 768px)": {
+      marginTop: 260,
+      marginLeft: 300,
+      padding: '10px 40px'
+    },  
+    "@media (max-width: 375px)": {
+      marginTop: 150,
+      marginLeft: 100,
+      padding: '10px 40px'
+    },
+    "@media (max-width: 414px)": {
+      marginTop: 140,
+      marginLeft: 120,
+      padding: '10px 40px'
     }
-    
   }
 }) 
 
