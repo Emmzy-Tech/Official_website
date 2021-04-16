@@ -592,6 +592,7 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
+
 .try{
   /* background: url(../../images/landing_bg.jpg) no-repeat  
     center center fixed; */

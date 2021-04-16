@@ -22,48 +22,24 @@ import MailIcon from '@material-ui/icons/Mail';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import { red } from "@material-ui/core/colors"
 
-<<<<<<< HEAD
-// const setNav = ()=>{
-//   if(document.documentElement.scrollTop >= 70){
-//     // alert('reached 50')
-//   }
-// }
-// window.addEventListener('scroll', setNav)
+
+
+
+
 const Header = ({ siteTitle }) => {
-  const [nav, setNav]  = useState(false)
-  const useStyles = makeStyles({
-    header: {
-      backgroundColor: "transparent",
-      color: "white",
-      boxShadow: "0 0 0 0"
-    }
-  })
-  const classes = useStyles()
-=======
-const setNav = ()=>{
-  window.addEventListener('scroll', setNav)
-  if(document.documentElement.scrollTop >= 70){
-    // alert('reached 50')
-  }
+    return(
+      <header>
+          <AppBar position="sticky">
+            <Toolbar>
+            <IconButton aria-label="app" color="inherent">
+            <Menu style={{color: 'white'}}/>
+            </IconButton>
+            <Typography variant="h6">Capacity</Typography>
+            </Toolbar>
+          </AppBar>
+      </header>
+    )
 }
-
-
-const Header = ({ siteTitle }) => {
-
->>>>>>> master
- return(
-  <header>
-      <AppBar position="sticky" className={classes.header}>
-        <Toolbar>
-        <IconButton aria-label="app" color="inherent">
-        <Menu style={{color: 'white'}}/>
-        </IconButton>
-        <Typography variant="h6">Capacity</Typography>
-        </Toolbar>
-      </AppBar>
-  </header>
-)
- }
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
