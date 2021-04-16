@@ -9,14 +9,14 @@ import { colors } from "@material-ui/core";
 import { useState, useEffect } from 'react'
 
 const setNav = ()=>{
+  window.addEventListener('scroll', setNav)
   if(document.documentElement.scrollTop >= 70){
     // alert('reached 50')
   }
 }
 
-window.addEventListener('scroll', setNav)
+
 const Header = ({ siteTitle }) => {
-  const [nav, setNav]  = useState(false)
 
  return(
   <header>
