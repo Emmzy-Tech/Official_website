@@ -32,21 +32,6 @@ const useStyles = makeStyles({
       marginTop: 140,
       marginLeft: 125,
       padding: '10px 40px'
-    },
-    "@media (max-width: 768px)": {
-      marginTop: 260,
-      marginLeft: 300,
-      padding: '10px 40px'
-    },  
-    "@media (max-width: 375px)": {
-      marginTop: 150,
-      marginLeft: 100,
-      padding: '10px 40px'
-    },
-    "@media (max-width: 414px)": {
-      marginTop: 140,
-      marginLeft: 120,
-      padding: '10px 40px'
     }
   }
 }) 
@@ -73,13 +58,11 @@ const IndexPage = () => {
        return (
         
         <Layout> 
-        <div className="sticky-nav">
-        
-        </div> 
+       
           <SEO title="Home" />
-          <div>
+          <div className="app">
             <Grid container className="landing">
-              <Grid item className="try">
+              <Grid item xs={12} className="try">
                   <img src={landing} />       
                   <Typography
                   variant= "h1"

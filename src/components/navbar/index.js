@@ -4,13 +4,14 @@ import { Link } from "gatsby"
 import './nav.css'
 import '../Layout.css'
 import logo from '../../images/logo.svg'
-import { colors } from "@material-ui/core";
+import { colors, Grow } from "@material-ui/core";
 import { useState, useEffect } from 'react'
 import { fade, makeStyles, useStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
+import Button from '@material-ui/core/Button';
 import InputBase from '@material-ui/core/InputBase';
 import Badge from '@material-ui/core/Badge';
 import MenuItem from '@material-ui/core/MenuItem';
@@ -34,7 +35,10 @@ const Header = ({ siteTitle }) => {
             <IconButton aria-label="app" color="inherent">
             <Menu style={{color: 'white'}}/>
             </IconButton>
-            <Typography variant="h6">Capacity</Typography>
+            <Typography variant="h6" style={{flexGrow: 1}}>Capacity</Typography>
+            <Button color="inherit">About Us</Button>
+            <Button color="inherit">Courses</Button>
+            <Button color="inherit">Contact us</Button>
             </Toolbar>
           </AppBar>
       </header>

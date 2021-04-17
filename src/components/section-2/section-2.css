@@ -1,19 +1,4 @@
 
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    }
-    
-    body{
-        font-family: sans-serif;
-    }
-    /* Global Styling Start */
-    .col {
-        flex-basis: 0;
-        flex-grow: 1;
-        max-width: 100%;
-    }
     /* Global Styling Ends  */
 
     /* Just trying to see if my pull request works */
