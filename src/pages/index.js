@@ -11,33 +11,23 @@ import Paper from '@material-ui/core/Paper'
 import { TweenMax, TimelineLite, Power2, Elastic, CSSPlugin } from "gsap/all";
 import { useState} from 'react'
 import Home2 from '../components/section-2'
-import Section3 from '../components/section-3'
+import Section3 from '../components/section-3/'
 import '../components/layout.css'
+import { Autorenew } from "@material-ui/icons"
+
 
 const useStyles = makeStyles({
   root:{
     border: 0,
     borderRadius: 22,
-    marginLeft: 143,
-    marginTop: 400,
     color: 'white',
     padding: '10px 60px',
-    fontWeight: 600,
-    background: 'linear-gradient(45deg, #042d73, #04befe)',
-    "@media (max-width: 600px)": {
-      marginTop: 220,
-      marginLeft: 125,
-      padding: '10px 40px'
-    },
-       "@media (max-width: 411px)": {
-      marginTop: 140,
-      marginLeft: 125,
-      padding: '10px 40px'
-    }
+    fontWeight: 600,    
+    background: 'linear-gradient(45deg, #042d73, #04befe)'
   }
   
 }) 
-
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
 function BtnStyled(){
   const classes = useStyles()
   return <Button className={classes.root}>Application</Button>
@@ -61,19 +51,13 @@ const IndexPage = () => {
         
         <Layout> 
        
-          <SEO title="Home" />
-          <div className="app">
-            <Grid container className="landing">
-              <Grid item xs={12} className="try">
-                  <img src={landing} />       
-                  <Typography
-                  variant= "h1"
-                  >Start your application</Typography>
-                  <p>Apply to college for the first time or transfer <br />to complete your degree. Navigate your entire<br /> college application journey with Common App</p>    
-                  <BtnStyled />
+          <SEO title="Home" />          
+            <Grid container className="cont">
+            <img src={landing}/>
+              <Grid item xs={12} md={8} className="">                            
+            
               </Grid>
-            </Grid>
-          </div>   
+            </Grid>  
           <Home2 />
           <Section3 />
         </Layout>

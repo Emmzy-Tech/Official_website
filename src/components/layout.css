@@ -592,49 +592,12 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
-.landing{
-  margin-bottom: 0;
-}
-.try{
-  /* background: url(../../images/landing_bg.jpg) no-repeat  
-    center center fixed; */
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  width: 100%;
-  z-index: 1;
-}
+
 .try img{
   position: absolute;
   width: 100%;
   top: 0;
 }
-.try h1{
-  font-size: 3rem;
-  color: white;
-  z-index: 4;
-  top: 100px;
-  margin-left: 140px;
-  position: absolute;
-}
-.try p{
-  font-size: 1.5em;
-  margin-left: 140px;
-  color: white;
-  position: absolute;
-  top: 310px;
-}
-
-.try h1{
-    font-size: 2.5rem;
-    color: white;
-    z-index: 4;
-    margin-top: 150px;
-    margin-left: 140px;
-    font-weight: 900;
-  }
-
   .sticky-nav{
     width: 100%;
     height: 160px;
@@ -643,65 +606,4 @@ pre tt:after {
     z-index: 200;
     opacity: 0;
   }
-@media only screen and (max-width: 480px) {
 
-  .try h1{
-    margin-top: 10px;
-    margin-left: 0;
-    font-weight: 900;
-    text-align: center;
-    line-height: 3rem;
-  }
-
-  .try p{
-    font-size: 1rem;
-    margin-left: 40px;
-    color: white;
-    position: absolute;
-    top: 340px;
-    text-align: center;
-    display: none;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .try h1{
-    margin-top: 40px;
-    margin-left: 200px;
-    font-size: 2rem;
-  }
-  .try p{
-    display: block;
-    top: 200px;
-    left: 80px;
-    font-size: 1em;
-  }
-}
-@media only screen and (max-width: 411px) {
-
- .try h1{
-    margin-top: 40px;
-    margin-left: 70px;
-    font-size: 1.5rem;
-  }
-   .try p{
-    display: none;
-  }
-}
-@media only screen and (max-width: 375px) {
-  .try h1{
-    margin-top: 40px;
-    margin-left: 50px;
-    font-size: 1.5rem;
-  }
-}
-@media only screen and (max-width: 416px) {
-  .try img{
-    height: 60%;
-  }
-  .try h1{
-    margin-left: 20px;
-  }
-  .try p{
-    display: none;
-  }
-}
