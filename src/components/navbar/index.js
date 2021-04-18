@@ -44,7 +44,7 @@ const Header = ({ siteTitle }) => {
   }
     return(
       <>
-            <header>
+          <header>
           <AppBar position="sticky">
             <Toolbar>
             <Typography variant="h6" style={{flexGrow: 1}}>Capacity</Typography>
