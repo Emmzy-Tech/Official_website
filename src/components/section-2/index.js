@@ -8,7 +8,6 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import Credit from "../../images/credit.svg"
 import Map from "../../images/map.svg"
 import Ballon from "../../images/ballon.svg"
-
 function Home2(props) {
     return (
         <>

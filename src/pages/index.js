@@ -11,6 +11,7 @@ import Paper from '@material-ui/core/Paper'
 import { TweenMax, TimelineLite, Power2, Elastic, CSSPlugin } from "gsap/all";
 import { useState} from 'react'
 import Home2 from '../components/section-2'
+import Section3 from '../components/section-3'
 import '../components/layout.css'
 
 const useStyles = makeStyles({
@@ -34,6 +35,7 @@ const useStyles = makeStyles({
       padding: '10px 40px'
     }
   }
+  
 }) 
 
 function BtnStyled(){
@@ -73,6 +75,7 @@ const IndexPage = () => {
             </Grid>
           </div>   
           <Home2 />
+          <Section3 />
         </Layout>
     
         )
