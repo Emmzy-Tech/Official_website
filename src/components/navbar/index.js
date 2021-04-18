@@ -4,7 +4,6 @@ import { Link } from "gatsby"
 import './nav.css'
 import '../Layout.css'
 import logo from '../../images/logo.svg'
-import { colors, Grow, useMediaQuery, useTheme } from "@material-ui/core";
 import { useState, useEffect } from 'react'
 import { fade, makeStyles, useStyles, ThemeProvider, theme } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
@@ -24,8 +23,8 @@ import NotificationsIcon from '@material-ui/icons/Notifications';
 import { red } from "@material-ui/core/colors"
 import DrawerNav from './DrawerComponent/drawer'
 import Switch from '@material-ui/core/Switch';
-import {lightTheme, darkTheme, GlobalStyles} from '../../components/theme.js'
-
+import { colors, Grow, useMediaQuery, useTheme } from "@material-ui/core";
+//import {darkTheme, lightTheme} from '../../components/theme'
 // const drawerWidth = 240
 // const style = theme=>({ 
 //   drawer:{
