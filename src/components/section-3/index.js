@@ -10,7 +10,7 @@ const Section3 = (props)=>{
     return(
         <>
             <div className="section3">
-                <Grid container sm={8} className="content">
+                <Grid container md={6} sm={8} xs={10} className="content">
                 
                 </Grid>
             </div>
