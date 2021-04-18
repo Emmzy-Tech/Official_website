@@ -24,6 +24,10 @@ const useStyles = makeStyles({
     padding: '10px 60px',
     fontWeight: 600,    
     background: 'linear-gradient(45deg, #042d73, #04befe)'
+  },
+
+  landing:{
+    backgroundImage: ``
   }
   
 }) 

@@ -3,7 +3,7 @@ import {Drawer, List, ListItemText, ListItem, ListItemIcon, IconButton} from '@m
 import MenuIcon from '@material-ui/icons/Menu'
 
 const DrawerComponent = ()=>{
-
+    //const styledApp = styled.div``;
     const [openDrawer, setOpenDrawer] = useState(false);
     
     return(

@@ -24,6 +24,7 @@ import NotificationsIcon from '@material-ui/icons/Notifications';
 import { red } from "@material-ui/core/colors"
 import DrawerNav from './DrawerComponent/drawer'
 import Switch from '@material-ui/core/Switch';
+import {lightTheme, darkTheme, GlobalStyles} from '../../components/theme.js'
 
 // const drawerWidth = 240
 // const style = theme=>({ 
@@ -33,9 +34,19 @@ import Switch from '@material-ui/core/Switch';
 // })
 
 const Header = ({ siteTitle }) => {
+
   const theme = useTheme()
-  const isMatch = useMediaQuery(theme.breakpoints.down('sm'))
+  const isMatch = useMediaQuery(theme.breakpoints.down('xs'))
+  
+  const [themeState, setThemeState] = useState('dark')
+  // General theme toggler
+  const themeToggler =()=>{
+    theme === "light" ? setThemeState('dark') : setThemeState('light')
+  }
     return(
+      <>
+      <ThemeProvider theme={theme === "light" ? darkTheme : lightTheme}>
+      <GlobalStyles/>
       <header>
           <AppBar position="sticky">
             <Toolbar>
@@ -54,6 +65,8 @@ const Header = ({ siteTitle }) => {
           </AppBar>
          
       </header>
+      </ThemeProvider>
+      </>
     )
 }
 
