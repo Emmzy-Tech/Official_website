@@ -25,10 +25,12 @@ import { red } from "@material-ui/core/colors"
 import DrawerNav from './DrawerComponent/drawer'
 import Switch from '@material-ui/core/Switch';
 
-
-// const style ={
-//   paper:
-// }
+// const drawerWidth = 240
+// const style = theme=>({ 
+//   drawer:{
+//     width: drawerWidth
+//   } 
+// })
 
 const Header = ({ siteTitle }) => {
   const theme = useTheme()
@@ -37,11 +39,8 @@ const Header = ({ siteTitle }) => {
       <header>
           <AppBar position="sticky">
             <Toolbar>
-            <IconButton aria-label="app" color="inherent">
-            <Menu style={{color: 'white'}}/>
-            </IconButton>
             <Typography variant="h6" style={{flexGrow: 1}}>Capacity</Typography>
-            {isMatch ? (<DrawerNav open={true} />) : (
+            {isMatch ? (<DrawerNav open={false} />) : (
               <>
               <Button color="inherit">About Us</Button>
               <Button color="inherit">Courses</Button>

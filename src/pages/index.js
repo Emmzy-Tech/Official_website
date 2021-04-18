@@ -53,7 +53,7 @@ const IndexPage = () => {
        
           <SEO title="Home" />          
             <Grid container className="cont">
-            <img src={landing}/>
+            <img style={{width: '100%'}}src={landing}/>
               <Grid item xs={12} md={8} className="">                            
             
               </Grid>

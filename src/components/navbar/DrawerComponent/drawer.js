@@ -4,8 +4,8 @@ import MenuIcon from '@material-ui/icons/Menu'
 
 const DrawerComponent = ()=>{
 
-    const [openDrawer, setOpenDrawer] = useState(true);
-
+    const [openDrawer, setOpenDrawer] = useState(false);
+    
     return(
     <>
         <Drawer anchor="right" onClose={()=>{setOpenDrawer(false)}} open={openDrawer}>
@@ -35,8 +35,8 @@ const DrawerComponent = ()=>{
                 </ListItem>
             </List>
         </Drawer>
-        <IconButton>
-            <MenuIcon />
+        <IconButton onClick={()=>{setOpenDrawer(!openDrawer)}}>
+            <MenuIcon style={{color:'white'}}/>
         </IconButton>
         </>
     )
