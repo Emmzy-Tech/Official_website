@@ -1,6 +1,5 @@
 import { createStyles } from '@material-ui/styles'
-import {createGlobalStyles} from 'styled-components'
-import { GlobalStyles } from './globalStyles'
+import {createGlobalStyle} from 'styled-components'
 
 export const lightTheme = {
     body: '#FFF',
@@ -14,3 +13,9 @@ export const darkTheme = {
     toggleBorder: '#6B8096',
     background: '#999',
 }
+
+export const GlobalStyles = createGlobalStyle`
+    body{
+        background-color: ${((props)=>props.theme.body)}
+    }
+`

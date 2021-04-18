@@ -4,7 +4,6 @@ import { Link } from "gatsby"
 import './nav.css'
 import '../Layout.css'
 import logo from '../../images/logo.svg'
-import { colors, Grow, useMediaQuery, useTheme } from "@material-ui/core";
 import { useState, useEffect } from 'react'
 import { fade, makeStyles, useStyles, ThemeProvider, theme } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
@@ -24,7 +23,8 @@ import NotificationsIcon from '@material-ui/icons/Notifications';
 import { red } from "@material-ui/core/colors"
 import DrawerNav from './DrawerComponent/drawer'
 import Switch from '@material-ui/core/Switch';
-
+import { colors, Grow, useMediaQuery, useTheme } from "@material-ui/core";
+//import {darkTheme, lightTheme} from '../../components/theme'
 // const drawerWidth = 240
 // const style = theme=>({ 
 //   drawer:{
@@ -33,9 +33,13 @@ import Switch from '@material-ui/core/Switch';
 // })
 
 const Header = ({ siteTitle }) => {
-  const theme = useTheme()
-  const isMatch = useMediaQuery(theme.breakpoints.down('sm'))
-    return(
+ const isMatch = useMediaQuery(theme.breakpoints.down('sm'))
+  //  const [theme, setTheme] = useState('dark')
+//  const themeToggler = ()=>{
+//    theme === "light" ? setTheme('dark') : setTheme('light')
+//  }
+
+    return(     
       <header>
           <AppBar position="sticky">
             <Toolbar>
@@ -54,6 +58,7 @@ const Header = ({ siteTitle }) => {
           </AppBar>
          
       </header>
+     
     )
 }
 
