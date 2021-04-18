@@ -45,9 +45,7 @@ const Header = ({ siteTitle }) => {
   }
     return(
       <>
-      <ThemeProvider theme={theme === "light" ? darkTheme : lightTheme}>
-      <GlobalStyles/>
-      <header>
+            <header>
           <AppBar position="sticky">
             <Toolbar>
             <Typography variant="h6" style={{flexGrow: 1}}>Capacity</Typography>
@@ -65,7 +63,7 @@ const Header = ({ siteTitle }) => {
           </AppBar>
          
       </header>
-      </ThemeProvider>
+    
       </>
     )
 }
