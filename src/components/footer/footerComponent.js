@@ -4,13 +4,15 @@ import Grid from '@material-ui/core/Grid';
 import {makeStyles} from '@material-ui/core/styles'
 import { Typography } from '@material-ui/core';
 import byc from '../../images/icons/byc.svg'
+import { motion } from "framer-motion"
 
 const useStyles= makeStyles(()=>({
     byc:{
         position: 'absolute',
-        bottom: -20,
+        bottom: 81,
         left: 100,
-        zIndex: 20
+        zIndex: 20,
+        width: 50,
     },
     listgridColor:{
         listStyle: 'none'
@@ -58,13 +60,13 @@ const Footer = ()=>{
                     <li>Volunteer</li>
                     <li>Contact us</li>
                     <li>Terms of service</li> 
-                    <li>Covid19</li>                    
+                    <li>Covid19</li>            
                     
 
                     </ul>                 
                     </Grid>                
                 </Grid>
-                <img src={byc} className={classes.byc} />
+                <motion.img src={byc} className={classes.byc} animate={{scale: 2}}/>
             </div>
                 <div className="bottomLine">
                     <ul className="flexedBottom">
