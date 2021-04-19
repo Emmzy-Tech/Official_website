@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { makeStyles, createMuiTheme, ThemeProvider, MuiThemeProvider, responsiveFontSizes } from '@material-ui/core/styles'
 import Grid from '@material-ui/core/Grid';
-import { Typography, Button, withTheme } from "@material-ui/core"
+import { Typography, Button, withTheme, IconButton } from "@material-ui/core"
 import Paper from '@material-ui/core/Paper'
 import { TweenMax, TimelineLite, Power2, Elastic, CSSPlugin } from "gsap/all";
 import { useState} from 'react'
@@ -14,9 +14,11 @@ import Home2 from '../components/section-2'
 import Section3 from '../components/section-3/'
 import '../components/layout.css'
 import { Autorenew } from "@material-ui/icons"
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
+import { colors, Grow, useMediaQuery, useTheme } from "@material-ui/core";
 
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme)=>({
   root:{
     border: 0,
     borderRadius: 22,
@@ -25,12 +27,41 @@ const useStyles = makeStyles({
     fontWeight: 600,    
     background: 'linear-gradient(45deg, #042d73, #04befe)'
   },
-
-  landing:{
-    backgroundImage: ``
+  Typography:{
+    fontSize:'1.5rem',
+    top: 90,
+    position: 'absolute',
+    zIndex: 23,
+    color: 'white',
+    marginLeft: 20,
+    [theme.breakpoints.up('md')]:{
+      fontSize: '4.5rem',
+      marginTop: 150
+    }
+  },
+  landingP:{
+    position: 'absolute',
+    top: 160,
+    fontSize: '.79em',
+    color: 'white',
+    marginLeft: 20,
+    fontWeight: 400,
+    [theme.breakpoints.up('md')]:{
+      fontSize: '1.3rem',
+      marginTop: 260
+    }
+  },
+  goDown:{
+    color: '#5aff3d',
+    fontSize: '7rem',
+    top:0,
+    color: 'white',
+    position: 'absolute'
+  },
+  container:{
+    position: 'relative'
   }
-  
-}) 
+}))
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
 function BtnStyled(){
   const classes = useStyles()
@@ -40,7 +71,7 @@ function BtnStyled(){
 // const theme = createMuiTheme();
 // theme = responsiveFontSizes(theme);
 const IndexPage = () => {
-
+  const classes = useStyles()
   const [loading, setLoading] = useState(false)
 
   // useEffect(()=>{
@@ -53,15 +84,18 @@ const IndexPage = () => {
 
        return (
         
-        <Layout> 
-       
-          <SEO title="Home" />          
+        <Layout>        
+          <SEO title="Home" />       
             <Grid container className="cont">
-            <img style={{width: '100%'}}src={landing}/>
-              <Grid item xs={12} md={8} className="">                            
-            
-              </Grid>
-            </Grid>  
+            <img style={{width: '100%'}}src={landing}/>  
+            <div className="container">             
+              <Grid item xs={12} md={8} className="">                           
+              <h1 className={classes.Typography}>Your future <br/>Starts here</h1>
+              <p className={classes.landingP}>Apply to college for the first time or transfer <br />to complete your degree. Navigate your entire <br />college application journey with Common App.</p>          
+          
+              </Grid>  
+              </div>            
+            </Grid> 
           <Home2 />
           <Section3 />
         </Layout>

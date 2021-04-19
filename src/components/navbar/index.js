@@ -47,12 +47,14 @@ const Header = ({ siteTitle }) => {
           <header>
           <AppBar position="sticky">
             <Toolbar>
-            <Typography variant="h6" style={{flexGrow: 1}}>Capacity</Typography>
+            <Typography variant="h6" style={{flexGrow: 1}}>CapacityBay</Typography>
             {isMatch ? (<DrawerNav open={false} />) : (
               <>
               <Button color="inherit">About Us</Button>
               <Button color="inherit">Courses</Button>
-              <Button color="inherit">Contact us</Button>
+              <Button color="inherit">Programs</Button>
+              <Button color="inherit">Resources</Button>
+              <Button color="inherit">IT Jobs</Button>
               </>
             )}
 

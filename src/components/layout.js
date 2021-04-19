@@ -13,6 +13,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import { useState, useEffect } from 'react'
 import styled, {ThemeProvider} from 'styled-components'
 import {lightTheme, darkTheme, GlobalStyles} from './theme.js'
+import Footer from './footer/footerComponent'
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -41,15 +42,7 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer
-          style={{
-            marginTop: `2rem`,
-          }}
-        >
-          © {new Date().getFullYear()}, Built with
-    
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
+      <Footer />
       </div>
      
     </>
