@@ -112,12 +112,12 @@ export function getCurrentDate(separator=''){
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-          <Typography paragraph>Method:</Typography>
+          <Typography paragraph>Date:</Typography>
        
        
         
           <Typography>
-            Set aside off of the heat to let rest for 10 minutes, and then serve.
+            Tuesday, Wednessdays and Friday Eastern Time
           </Typography>
         </CardContent>
       </Collapse>
