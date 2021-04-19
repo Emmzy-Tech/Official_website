@@ -12,11 +12,8 @@ const useStyles= makeStyles(()=>({
         left: 100,
         zIndex: 20
     },
-    fgrid:{
-        backgroundColor: 'red',
-        height: 350,
-        marginBottom: 30,
-        margin: '0 auto'
+    listgridColor:{
+        listStyle: 'none'
     }
 }))
 const Footer = ()=>{
@@ -46,15 +43,25 @@ const Footer = ()=>{
                     <h3>Quick links</h3>
                     
                     <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>9701 Apollo Drive suite 301 Largo MD 20774</li>
+                    <li>info@capacitybay.org</li>
+                    <li>Mon.-Fri.: 10-20 Sun.: 12-16</li>
                     </ul>
                     </div>                 
                     </Grid>
 
-                    <Grid item md={4} xs={10} className={classes.fgrid}>  
-                    <h3>Contact</h3>                  
+                    <Grid item md={4} xs={10} className="fgrid">  
+                    <h3>Contact</h3> 
+                    <ul>
+                    <li>Login</li>
+                    <li>Sign up</li>
+                    <li>Volunteer</li>
+                    <li>Contact us</li>
+                    <li>Terms of service</li> 
+                    <li>Covid19</li>                    
+                    
+
+                    </ul>                 
                     </Grid>                
                 </Grid>
                 <img src={byc} className={classes.byc} />

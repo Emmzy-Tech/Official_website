@@ -51,10 +51,7 @@
     margin-left: 150px;
 }
 
-@media (max-width: 786px){
-    .contentButton{
-        margin-left: 0;
-    }
+@media (max-width: 786px){    
     .contentButtonCont{
         height: 50%;
     }

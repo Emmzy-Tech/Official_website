@@ -9,7 +9,7 @@ import { colors, Grow, useMediaQuery, useTheme } from "@material-ui/core";
 
 const useStyle = makeStyles((theme)=>({
     Typography:{
-        color:'black',
+    color:'black',
         [theme.breakpoints.down('sm')]:{
             fontSize: '1.7rem',
         },
@@ -18,9 +18,14 @@ const useStyle = makeStyles((theme)=>({
         [theme.breakpoints.down('sm')]:{
             fontSize: '1rem',
         },
-    }
+      
+    // contentButton:{
+    //   display: "none",
+    // }    
+}
 }))
 const Section3 = (props)=>{
+
    const classes = useStyle()
     return(
         <>
@@ -33,11 +38,6 @@ const Section3 = (props)=>{
                     <div className="contentButtonCont">
                         <Typography style={{position: 'absolute', marginTop:'20px'}} variant="subtitle2">It’s go time — and we’ll be with you every step of the way.
                         Here’s where you’ll find what you need to take that next step towards a brighter future.</Typography>
-                    
-                        <div className="contentButton">
-                        <Button>button 1</Button>
-                        <Button>button 1</Button>
-                        </div>
                     </div>
                 </Grid>
             </div>

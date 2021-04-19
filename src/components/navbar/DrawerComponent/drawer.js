@@ -12,25 +12,37 @@ const DrawerComponent = ()=>{
             <List>
                 <ListItem button divider>
                     <ListItemIcon>
-                    <ListItemText>Courses</ListItemText>
+                    <ListItemText>Home</ListItemText>
                     </ListItemIcon>
                 </ListItem>
 
                 <ListItem button divider>
                     <ListItemIcon>
-                    <ListItemText>Courses</ListItemText>
+                    <ListItemText>About us</ListItemText>
                     </ListItemIcon>
                 </ListItem>
 
                 <ListItem button divider>
                     <ListItemIcon>
-                    <ListItemText>Courses</ListItemText>
+                    <ListItemText>Programs</ListItemText>
                     </ListItemIcon>
                 </ListItem>
 
                 <ListItem button divider>
+                <ListItemIcon>
+                <ListItemText>Consulting</ListItemText>
+                </ListItemIcon>
+            </ListItem>
+
+            <ListItem button divider>
+            <ListItemIcon>
+            <ListItemText>Resources</ListItemText>
+            </ListItemIcon>
+        </ListItem>
+
+                <ListItem button divider>
                     <ListItemIcon>
-                    <ListItemText>Courses</ListItemText>
+                    <ListItemText>Contact</ListItemText>
                     </ListItemIcon>
                 </ListItem>
             </List>

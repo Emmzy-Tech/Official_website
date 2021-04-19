@@ -18,6 +18,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 import { colors, Grow, useMediaQuery, useTheme } from "@material-ui/core";
 
 
+
 const useStyles = makeStyles((theme)=>({
   root:{
     border: 0,
@@ -56,7 +57,8 @@ const useStyles = makeStyles((theme)=>({
     fontSize: '7rem',
     top:0,
     color: 'white',
-    position: 'absolute'
+    position: 'absolute',
+    zIndex: 400
   },
   container:{
     position: 'relative'
@@ -83,7 +85,10 @@ const IndexPage = () => {
       {
 
        return (
-        
+         const theme = createMuiTheme({
+
+         })
+        <ThemeProvider theme={theme}>
         <Layout>        
           <SEO title="Home" />       
             <Grid container className="cont">
@@ -92,14 +97,16 @@ const IndexPage = () => {
               <Grid item xs={12} md={8} className="">                           
               <h1 className={classes.Typography}>Your future <br/>Starts here</h1>
               <p className={classes.landingP}>Apply to college for the first time or transfer <br />to complete your degree. Navigate your entire <br />college application journey with Common App.</p>          
-          
+              <IconButton className={classes.goDown}>
+              <ExpandMoreIcon/>
+              </IconButton>
               </Grid>  
               </div>            
             </Grid> 
           <Home2 />
           <Section3 />
         </Layout>
-    
+        </ThemeProvider>
         )
       }
   }
