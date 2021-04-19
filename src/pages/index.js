@@ -82,12 +82,13 @@ const IndexPage = () => {
   //       setLoading(false)
   //     }, 8000)
   // })
-      {
+  const theme = createMuiTheme({
+    palette:{
+      type: "dark",
+    }
+  })
 
-       return (
-         const theme = createMuiTheme({
-
-         })
+       return (         
         <ThemeProvider theme={theme}>
         <Layout>        
           <SEO title="Home" />       
@@ -97,6 +98,7 @@ const IndexPage = () => {
               <Grid item xs={12} md={8} className="">                           
               <h1 className={classes.Typography}>Your future <br/>Starts here</h1>
               <p className={classes.landingP}>Apply to college for the first time or transfer <br />to complete your degree. Navigate your entire <br />college application journey with Common App.</p>          
+              <Button>Call to action</Button>
               <IconButton className={classes.goDown}>
               <ExpandMoreIcon/>
               </IconButton>
@@ -108,6 +110,6 @@ const IndexPage = () => {
         </Layout>
         </ThemeProvider>
         )
-      }
+      
   }
 export default IndexPage
