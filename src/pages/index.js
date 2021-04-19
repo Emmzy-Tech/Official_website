@@ -16,6 +16,8 @@ import '../components/layout.css'
 import { Autorenew } from "@material-ui/icons"
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 import { colors, Grow, useMediaQuery, useTheme } from "@material-ui/core";
+import RecipeReviewCard from '../components/home/cardComponent/card'
+
 
 
 
@@ -26,7 +28,22 @@ const useStyles = makeStyles((theme)=>({
     color: 'white',
     padding: '10px 60px',
     fontWeight: 600,    
-    background: 'linear-gradient(45deg, #042d73, #04befe)'
+    position:"absolute",
+    top: 540,
+    left: 165,
+    background: 'linear-gradient(45deg, #042d73, #04befe)',
+    [theme.breakpoints.down('xs')]:{
+      top: 229,
+      left: 30,
+
+    }
+  },
+  landingCard:{
+    position: "absolute",
+    top: 0,
+  },
+  cont:{
+    position: "relative",
   },
   Typography:{
     fontSize:'1.5rem',
@@ -51,14 +68,6 @@ const useStyles = makeStyles((theme)=>({
       fontSize: '1.3rem',
       marginTop: 260
     }
-  },
-  goDown:{
-    color: '#5aff3d',
-    fontSize: '7rem',
-    top:0,
-    color: 'white',
-    position: 'absolute',
-    zIndex: 400
   },
   container:{
     position: 'relative'
@@ -92,17 +101,16 @@ const IndexPage = () => {
         <ThemeProvider theme={theme}>
         <Layout>        
           <SEO title="Home" />       
-            <Grid container className="cont">
+            <Grid container className={classes.cont}>
+            <RecipeReviewCard/>
             <img style={{width: '100%'}}src={landing}/>  
             <div className="container">             
               <Grid item xs={12} md={8} className="">                           
               <h1 className={classes.Typography}>Your future <br/>Starts here</h1>
               <p className={classes.landingP}>Apply to college for the first time or transfer <br />to complete your degree. Navigate your entire <br />college application journey with Common App.</p>          
-              <Button>Call to action</Button>
-              <IconButton className={classes.goDown}>
-              <ExpandMoreIcon/>
-              </IconButton>
+              <Button className={classes.root} color="primary">Register Now</Button>
               </Grid>  
+              
               </div>            
             </Grid> 
           <Home2 />
