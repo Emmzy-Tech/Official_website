@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme)=>({
     fontWeight: 600,    
     position:"absolute",
     top: 540,
-    left: 165,
+    left: 205,
     background: 'linear-gradient(45deg, #042d73, #04befe)',
     [theme.breakpoints.down('xs')]:{
       top: 229,
@@ -52,7 +52,7 @@ const useStyles = makeStyles((theme)=>({
     position: 'absolute',
     zIndex: 23,
     color: 'white',
-    marginLeft: 20,
+    marginLeft: 60,
     [theme.breakpoints.up('md')]:{
       fontSize: '4.5rem',
       marginTop: 150
@@ -63,7 +63,7 @@ const useStyles = makeStyles((theme)=>({
     top: 160,
     fontSize: '.79em',
     color: 'white',
-    marginLeft: 20,
+    marginLeft: 60,
     fontWeight: 400,
     [theme.breakpoints.up('md')]:{
       fontSize: '1.3rem',
@@ -105,14 +105,15 @@ const IndexPage = () => {
             <Grid container className={classes.cont}>
             <RecipeReviewCard/>
             <img style={{width: '100%'}}src={landing}/>  
+          
             <div className="container">             
               <Grid item xs={12} md={8} className="">                           
               <h1 className={classes.Typography}>Your future <br/>Starts here</h1>
               <p className={classes.landingP}>Apply to college for the first time or transfer <br />to complete your degree. Navigate your entire <br />college application journey with Common App.</p>          
-              <Button className={classes.root} color="primary">Register Now</Button>
-              </Grid>  
-              
-              </div>            
+              <Button className={classes.root}color="primary">Register Now</Button>
+              </Grid>                
+              </div>  
+                  
             </Grid> 
           <Home2 />
           <Section3 />

@@ -9,10 +9,10 @@ import { motion } from "framer-motion"
 const useStyles= makeStyles(()=>({
     byc:{
         position: 'absolute',
-        bottom: 81,
+        bottom: 51,
         left: 100,
         zIndex: 20,
-        width: 50,
+        width: 130,
     },
     listgridColor:{
         listStyle: 'none'
@@ -66,7 +66,10 @@ const Footer = ()=>{
                     </ul>                 
                     </Grid>                
                 </Grid>
-                <motion.img src={byc} className={classes.byc} animate={{scale: 2}}/>
+                <motion.div
+                innitial={{x: 0}}
+                animate={{y: 60}}
+                ><img src={byc} className={classes.byc} animate={{scale: 2}}/></motion.div>
             </div>
                 <div className="bottomLine">
                     <ul className="flexedBottom">

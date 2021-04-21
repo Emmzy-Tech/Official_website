@@ -45,7 +45,7 @@ const Header = ({ siteTitle }) => {
     return(
       <>
           <header>
-          <AppBar position="sticky">
+          <AppBar position="static" style={{ boxShadow: 'none'}}>
             <Toolbar>
             <Typography variant="h6" style={{flexGrow: 1}}>CapacityBay</Typography>
             {isMatch ? (<DrawerNav open={false} />) : (
