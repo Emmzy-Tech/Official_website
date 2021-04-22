@@ -43,9 +43,9 @@ const Header = ({ siteTitle }) => {
     theme === "light" ? setThemeState('dark') : setThemeState('light')
   }
     return(
-      <>
-          <header>
-          <AppBar position="static" style={{ boxShadow: 'none'}}>
+      
+          <>
+          <AppBar position="sticky" >
             <Toolbar>
             <Typography variant="h6" style={{flexGrow: 1}}>CapacityBay</Typography>
             {isMatch ? (<DrawerNav open={false} />) : (
@@ -63,7 +63,7 @@ const Header = ({ siteTitle }) => {
             
           </AppBar>
          
-      </header>
+    
     
       </>
     )
