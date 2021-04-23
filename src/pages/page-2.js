@@ -7,7 +7,9 @@ function page2(props) {
     return (
         <div>
            <Layout>
-           <RecipeReviewCard />
+           <div className="tested">
+           
+           </div>
            </Layout> 
         </div>
     )
