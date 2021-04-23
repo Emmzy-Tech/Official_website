@@ -19,9 +19,6 @@ import { colors, Grow, useMediaQuery, useTheme } from "@material-ui/core";
 import RecipeReviewCard from '../components/home/cardComponent/card'
 
 
-
-
-
 const useStyles = makeStyles((theme)=>({
   root:{
     border: 0,
@@ -31,12 +28,15 @@ const useStyles = makeStyles((theme)=>({
     fontWeight: 600,    
     position:"absolute",
     top: 540,
-    left: 205,
+    left: 180,
     background: 'linear-gradient(45deg, #042d73, #04befe)',
+    [theme.breakpoints.up('sm')]:{
+      fontSize:'1rem'
+    },
     [theme.breakpoints.down('xs')]:{
-      top: 229,
-      left: 30,
-
+      position: "absolute",
+      left: 18,
+      top: 200
     }
   },
   landingCard:{
@@ -55,19 +55,31 @@ const useStyles = makeStyles((theme)=>({
     marginLeft: 60,
     [theme.breakpoints.up('md')]:{
       fontSize: '4.5rem',
-      marginTop: 150
+      marginTop: 100,
+      marginLeft: 20
+    },
+    [theme.breakpoints.down('xs')]:{
+      marginLeft: 2,
+      fontSize: '1.8rem',
+      top: 45,
+      position: 'absolute',
     }
   },
   landingP:{
     position: 'absolute',
-    top: 160,
+    top: 130,
     fontSize: '.79em',
     color: 'white',
-    marginLeft: 60,
+    marginLeft: 25,
     fontWeight: 400,
     [theme.breakpoints.up('md')]:{
       fontSize: '1.3rem',
       marginTop: 260
+    },
+    [theme.breakpoints.down('xs')]:{
+     position: "absolute",
+     top: 110,
+     marginLeft: 0,
     }
   },
   container:{

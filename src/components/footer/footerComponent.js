@@ -5,6 +5,7 @@ import {makeStyles} from '@material-ui/core/styles'
 import { Typography } from '@material-ui/core';
 import byc from '../../images/icons/byc.svg'
 import { motion } from "framer-motion"
+import { colors, Grow, useMediaQuery, useTheme, theme } from "@material-ui/core";
 
 const useStyles= makeStyles(()=>({
     byc:{
@@ -66,11 +67,7 @@ const Footer = ()=>{
                     </ul>                 
                     </Grid>                
                 </Grid>
-                <motion.div
-                innitial={{x: 0}}
-                animate={{x: 530}}
-                transition={{delay: .5, duration: 5}}
-                ><img src={byc} className={classes.byc} /></motion.div>
+       
             </div>
                 <div className="bottomLine">
                     <ul className="flexedBottom">
