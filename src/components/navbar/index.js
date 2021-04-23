@@ -34,7 +34,6 @@ import { colors, Grow, useMediaQuery, useTheme } from "@material-ui/core";
 
 const Header = () => {
 
-  const theme = useTheme()
   const isMatch = useMediaQuery(theme.breakpoints.down('xs'))
   
   const [themeState, setThemeState] = useState('dark')
