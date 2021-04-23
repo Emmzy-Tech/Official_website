@@ -58,6 +58,19 @@ ul li{
     font-size: 16px;
     text-align: justify;
 }
+.byc{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 350px;
+    height: 300px;
+    overflow: hidden;
+    animation: mov 3s infinite linear;
+    background-color: red;
+}
 @media(max-width: 786px){
    .footer{
        display: flex;
@@ -73,4 +86,9 @@ ul li{
    .fgrid{
        
    }
+}
+@keyframes mov{
+    100%{
+        left: 500px;
+    }
 }
