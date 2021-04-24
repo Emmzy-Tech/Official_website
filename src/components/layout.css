@@ -592,12 +592,7 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
-.page-wrap{
-  width: 80%;
-  margin: 0 auto;
-  background-color: #000;
-  padding: 20px;
-}
+
 .try img{
   position: absolute;
   width: 100%;
