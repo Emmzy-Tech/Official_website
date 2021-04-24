@@ -12,6 +12,7 @@ import { TweenMax, TimelineLite, Power2, Elastic, CSSPlugin } from "gsap/all";
 import { useState} from 'react'
 import Home2 from '../components/section-2'
 import Section3 from '../components/section-3/'
+import Blog from '../components/section-4/'
 import '../components/layout.css'
 import { Autorenew } from "@material-ui/icons"
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
@@ -129,6 +130,7 @@ const IndexPage = () => {
             </Grid> 
           <Home2 />
           <Section3 />
+          <Blog />
         </Layout>
         </ThemeProvider>
         )
