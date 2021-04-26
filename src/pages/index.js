@@ -18,6 +18,7 @@ import { Autorenew } from "@material-ui/icons"
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 import { colors, Grow, useMediaQuery, useTheme } from "@material-ui/core";
 import RecipeReviewCard from '../components/home/cardComponent/card'
+import VideoComponent from '../components/videoSection'
 
 
 const useStyles = makeStyles((theme)=>({
@@ -131,6 +132,7 @@ const IndexPage = () => {
           <Home2 />
           <Section3 />
           <Blog />
+          <VideoComponent />
         </Layout>
         </ThemeProvider>
         )
