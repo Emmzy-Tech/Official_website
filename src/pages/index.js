@@ -37,7 +37,7 @@ const useStyles = makeStyles((theme)=>({
     },
     [theme.breakpoints.down('xs')]:{
       position: "absolute",
-      left: 18,
+      left: 59,
       top: 200
     }
   },
@@ -61,7 +61,7 @@ const useStyles = makeStyles((theme)=>({
       marginLeft: 20
     },
     [theme.breakpoints.down('xs')]:{
-      marginLeft: 2,
+      marginLeft: 50,
       fontSize: '1.8rem',
       top: 45,
       position: 'absolute',
@@ -81,7 +81,7 @@ const useStyles = makeStyles((theme)=>({
     [theme.breakpoints.down('xs')]:{
      position: "absolute",
      top: 110,
-     marginLeft: 0,
+     marginLeft: '50px',
     }
   },
   container:{

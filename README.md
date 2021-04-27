@@ -98,10 +98,6 @@ Gatsby Cloud is an end-to-end cloud platform specifically built for the Gatsby f
 
 <!-- AUTO-GENERATED-CONTENT:END -->
 <!-- navbar/index -->
-    <!-- {isMatch ? (<DrawerNav open={true} />) : (
-              <>
-              <Button color="inherit">About Us</Button>
-              <Button color="inherit">Courses</Button>
-              <Button color="inherit">Contact us</Button>
-              </>
-            )} -->
+
+1. The responsive typography recides in the apps videoSection folder
+2.

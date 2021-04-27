@@ -82,6 +82,11 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
+.flx{
+    display: flex;
+    width: 100%;
+    background-color: red;
+}
 @media (min-width: 1280px){
 .container {
     max-width: 1250px;
