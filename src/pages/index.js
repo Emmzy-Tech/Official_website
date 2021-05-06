@@ -116,19 +116,7 @@ const IndexPage = () => {
         <ThemeProvider theme={theme}>
         <Layout>        
           <SEO title="Home" />       
-            <Grid container className={classes.cont}>
-            <RecipeReviewCard/>
-            <img style={{width: '100%'}}src={landing}/>  
-          
-            <div className="container">             
-              <Grid item xs={12} md={8} className="">                           
-              <h1 className={classes.Typography}>Your future <br/>Starts here</h1>
-              <p className={classes.landingP}>Apply to college for the first time or transfer <br />to complete your degree. Navigate your entire <br />college application journey with Common App.</p>          
-              <Button className={classes.root}color="primary">Register Now</Button>
-              </Grid>                
-              </div>  
-                  
-            </Grid> 
+       
           <Home2 />
           <Section3 />
           <Blog />
