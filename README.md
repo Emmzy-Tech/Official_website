@@ -99,5 +99,8 @@ Gatsby Cloud is an end-to-end cloud platform specifically built for the Gatsby f
 <!-- AUTO-GENERATED-CONTENT:END -->
 <!-- navbar/index -->
 
-1. The responsive typography recides in the apps videoSection folder
-2.
+1. The responsive typography recides in the apps components/videoSection folder (MuiResponsiveText)
+2. The responsive media query example is located at navbar/drawerComponent
+3. makeStyles usage can be found in appbar navigation-section,
+
+Section Description

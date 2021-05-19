@@ -8,12 +8,13 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import Header from "./navbar/index"
+import Header from "./navbar/AppBar"
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { useState, useEffect } from 'react'
 import styled, {ThemeProvider} from 'styled-components'
 import {lightTheme, darkTheme, GlobalStyles} from './theme.js'
 import Footer from './footer/footerComponent'
+
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -36,13 +37,10 @@ const Layout = ({ children }) => {
   return (
     <>
 
-      <div
-        style={{
-          margin: `0 auto`,
-        }}
-      >
-        <main>{children}</main>
-      <Footer />
+      <div>
+          <Header />
+          <main>{children}</main>
+          <Footer />
       </div>
      
     </>

@@ -7,9 +7,8 @@ import { colors, Grow, useMediaQuery, useTheme} from "@material-ui/core"
 import manBall from  '../../images/manBall.svg'
 import obi from  '../../images/obi.jpg'
 import play from  '../../images/play.png'
-import { red } from '@material-ui/core/colors';
+import { red } from '@material-ui/core/colors'
 import './vid.css'
-
 
 
 let theme = createMuiTheme()

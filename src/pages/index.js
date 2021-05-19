@@ -19,6 +19,9 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 import { colors, Grow, useMediaQuery, useTheme } from "@material-ui/core";
 import RecipeReviewCard from '../components/home/cardComponent/card'
 import VideoComponent from '../components/videoSection'
+import LandingComponent from "../components/home/landingComponent"
+import DrawerNav from '../components/navbar/DrawerComponent/drawer'
+import ButtonAppBar from '../components/navbar/AppBar'
 
 
 const useStyles = makeStyles((theme)=>({
@@ -115,8 +118,10 @@ const IndexPage = () => {
        return (         
         <ThemeProvider theme={theme}>
         <Layout>        
-          <SEO title="Home" />       
-       
+          <SEO title="Home" />  
+          <ButtonAppBar />
+          <DrawerNav />     
+          <LandingComponent />
           <Home2 />
           <Section3 />
           <Blog />
