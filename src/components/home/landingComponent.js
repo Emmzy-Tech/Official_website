@@ -8,7 +8,8 @@ const useStyles= makeStyles(()=>({
 
     gridCont:{
         backgroundColor: 'red',
-        minHeight: '600px',       
+        minHeight: '100%',
+        width: '100%'       
     },
 }))
 
