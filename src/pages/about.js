@@ -9,6 +9,7 @@ import Grid from '@material-ui/core/Grid';
 import AbTop from "../components/about"
 
 
+
 const useStyles = makeStyles((theme)=>({
  
 }))
@@ -18,7 +19,7 @@ const About = (props)=>{
     return (
         <>
            <Layout>
-           <AbTop />       
+                <AbTop />       
            </Layout> 
         </>
     )

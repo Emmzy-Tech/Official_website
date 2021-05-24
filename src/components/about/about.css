@@ -37,6 +37,7 @@
 .item-space{
     background-color: white;
 }
+
 @media(max-width: 786px){
     .itemLower img{
         max-width: 50%; 
@@ -46,9 +47,15 @@
        }
        
     .itemLower2 img{
-        max-width: 100px; 
+        max-width: 55px; 
         position: absolute;
         bottom: 0;
         right: 40px;
     }
+    .itemLower img{
+        width: 50px; 
+        position: absolute;
+        bottom: 0;
+        left: 70px;
+      }
 }

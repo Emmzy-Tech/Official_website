@@ -41,11 +41,11 @@ const Footer = ()=>{
                     </div> 
                     </Grid>
 
-                    <Grid item md={4} xs={10} className={classes.fgrid}>   
+                    <Grid item md={4} xs={12} className={classes.fgrid}>   
                     <div className="con1">
                     <h3>Quick links</h3>
                     
-                    <ul>
+                    <ul className="footer-ul">
                     <li>9701 Apollo Drive suite 301 Largo MD 20774</li>
                     <li>info@capacitybay.org</li>
                     <li>Mon.-Fri.: 10-20 Sun.: 12-16</li>

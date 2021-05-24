@@ -13,6 +13,7 @@ import {useTheme, theme} from '@material-ui/core/styles'
 import {useMediaQuery} from '@material-ui/core/useMediaQuery'
 import Drawer from '../navbar/DrawerComponent/drawer'
 import { Height } from '@material-ui/icons'
+import NavLogo from '../../images/Capacity-Bay-4-footer.png'
 
 const useStyles= makeStyles((theme)=>({
     appBarTrans:{
@@ -27,6 +28,16 @@ const useStyles= makeStyles((theme)=>({
         display: 'flex',
         justifyContent: 'space-around',        
     },
+    link:{
+        color: 'green',
+        listStyle: 'none'
+    },
+    logo:{
+        width: '100px',
+        position: 'absolute',
+        top: '20px',
+        left: '40px'
+    }
 }))
 
 export default function ButtonAppBar(){
@@ -36,13 +47,15 @@ export default function ButtonAppBar(){
     //const isMatch = useMediaQuery(theme.breakpoints.down('md')) 
     return(
         <div>
-        <AppBar position="fixed" className={classes.appBarTrans}>
+        <AppBar position="absolute" className={classes.appBarTrans}>
+        <img src={NavLogo} className={classes.logo}/>
         <div className="toolbox">
-            <Toolbar className={classes.toolBox}>
-                <Link to="/about">ABout</Link>
-                <Link to="/about">ABout</Link>
-                <Link to="/about">ABout</Link>
-                <Link to="/about">ABout</Link>
+            <Toolbar className={classes.toolBox}>                
+                <Link to="/" className={classes.link}>Home</Link>
+                <Link to="/about" className={classes.link}>ABout Us</Link>
+                <Link to="/page-2" className={classes.link}>Programs</Link>
+                <Link to="/about" className={classes.link}>Consulting</Link>
+                <Link to="/contact" className={classes.link}>Contact</Link>
             </Toolbar>
         </div>
         </AppBar>

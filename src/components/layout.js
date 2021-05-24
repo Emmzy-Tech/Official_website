@@ -14,6 +14,8 @@ import { useState, useEffect } from 'react'
 import styled, {ThemeProvider} from 'styled-components'
 import {lightTheme, darkTheme, GlobalStyles} from './theme.js'
 import Footer from './footer/footerComponent'
+import DrawerNav from '../components/navbar/DrawerComponent/drawer'
+import DrawerComponent from "../components/navbar/DrawerComponent/drawer"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -39,6 +41,7 @@ const Layout = ({ children }) => {
 
       <div>
           <Header />
+          <DrawerComponent />
           <main>{children}</main>
           <Footer />
       </div>

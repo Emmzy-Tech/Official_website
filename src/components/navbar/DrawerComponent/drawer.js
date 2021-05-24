@@ -15,13 +15,13 @@ const DrawerComponent = ()=>{
                 display: 'none'
             },        
         },
-  
+    
     }))
     const classes = useStyles();
 
     return(
      <>
-        <Drawer anchor="right" onClose={()=>{setOpenDrawer(false)}} open={openDrawer}>
+        <Drawer anchor="right" onClose={()=>{setOpenDrawer(false)}} open={openDrawer} className={classes.draw}>
             <List>
                 <ListItem button divider>
                     <ListItemIcon>
@@ -61,7 +61,7 @@ const DrawerComponent = ()=>{
             </List>
         </Drawer>
             <IconButton onClick={()=>{setOpenDrawer(!openDrawer)}} className={classes.icon}>
-            <MenuIcon style={{color:'white'}}/>
+            <MenuIcon style={{color:'green'}}/>
             </IconButton>
         </>
     )

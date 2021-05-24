@@ -20,16 +20,30 @@ const useStyles= makeStyles(()=>({
         color: 'black',
         fontWeight: 500,
         paddingBottom: 40,
-        fontSize: '4rem',
+        fontSize: '2rem',
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        marginTop: '50px',
-        position: 'relative',
+        position: 'absolute',
+        top: '130px',
+        left: '43%',
+        [theme.breakpoints.down('md')]:{
+            fontSize: '1rem',
+            position: 'absolute',
+            top: '65px',
+            right: '0',
+            fontWeight: 700,
+        }
     },
 
     h3:{
-        fontSize: '3rem'
+        fontSize: '2rem',
+        [theme.breakpoints.down('sm')]:{
+            fontSize: '1rem',
+        }
+    },
+    gridCont:{
+    
     }
 }))
 const AbTop = ({location})=>{
@@ -37,20 +51,20 @@ const AbTop = ({location})=>{
     return( 
             <Grid container className={classes.gridCont}>
                 <Grid item className="gridItem" xs={12}>
-                <MuiThemeProvider theme={theme}>            
-                  <Typography variant="h1" gutterBottom className={classes.TypographyText}>Why data maters</Typography>                  
-                </MuiThemeProvider>
+                    <MuiThemeProvider theme={theme}>            
+                    <Typography variant="h1" gutterBottom className={classes.TypographyText}>Why data maters</Typography>                  
+                    </MuiThemeProvider>
                 </Grid>
                 <Grid item className="itemLower h" sm={6} xs={6}>
                     <img src={manBall}/>
                 </Grid>    
                 <Grid item className="itemLower2 h" sm={6} xs={6}>
-                <img src={buildSon}/>
+                    <img src={buildSon}/>
                 </Grid>   
                 
-                <Grid item className="itemText" xs={6}>
+                <Grid item className="itemText" md={6} xs={12}>
                     <MuiThemeProvider theme={theme}>            
-                    <Typography variant="h3" gutterBottom className={classes.h3}>Data is gold, the reason for the trends on it</Typography>
+                    <Typography gutterBottom className={classes.h3}>Data is gold, the reason for the trends on it</Typography>
                     <Typography variant="body" gutterBottom className={classes.textBody}>College isn’t just a place to learn. It’s where you’ll find a community filled with new people and have new experiences. It’s where you’ll make friends for life and learn important lessons about yourself. It's where you'll go to reach new heights.</Typography>                  
                     </MuiThemeProvider>
                 </Grid>

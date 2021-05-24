@@ -20,26 +20,18 @@ const useStyles = makeStyles((theme)=>({
     }
 }))
 
-const Page2 = (props)=>{
+const Contact = (props)=>{
     const classes = useStyles()
     return (
         <>
            <Layout>
            <div className="page-wrap">
            <Grid container spacing={2}>
-                <Grid item className="breadAbt" xs={12}>
-                    <div className="centerCont">
-                       <div className="bold-text">
-                          <h2>Support for all students</h2>
-                       </div> 
-                       <p>As a recommender, you need to support a diverse range of students and families. Common App for recommenders offers a simple way to manage your workflow and help your students soar.</p>
-                    </div>
-                </Grid>
-                <Grid item md={6} xs={12}>
-                    <Paper className={classes.paperplay}>
-                
-                    </Paper>
-                </Grid>
+           <Grid item md={6} xs={12}>
+                <Paper className={classes.paperplay}>
+            
+                </Paper>
+            </Grid>
 
             <Grid item md={6} xs={12}>
             <Paper className={classes.paperplay}>
@@ -53,9 +45,9 @@ const Page2 = (props)=>{
     )
 }
 
-Page2.propTypes = {
+Contact.propTypes = {
 
 }
 
-export default Page2
+export default Contact
 
