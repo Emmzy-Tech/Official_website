@@ -120,7 +120,7 @@ const IndexPage = () => {
         <Layout>        
           <SEO title="Home" />  
           <ButtonAppBar />
-          <DrawerNav />     
+            
           <LandingComponent />
           <Home2 />
           <Section3 />

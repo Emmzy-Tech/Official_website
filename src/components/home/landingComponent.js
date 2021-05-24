@@ -1,14 +1,14 @@
 import React from 'react'
 import Grid from '@material-ui/core/Grid'
 import {makeStyles} from '@material-ui/core/styles'
-import { Splide, SplideSlide } from '@splidejs/react-splide';
+//import { Splide, SplideSlide } from '@splidejs/react-splide';
 import './landing.css'
 
 const useStyles= makeStyles(()=>({
     gridCont:{
         backgroundColor: 'red',
         minHeight: '700px',
-        width: '100%'       
+        width: '100%'     
     },
 }))
 

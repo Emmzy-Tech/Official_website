@@ -3,7 +3,6 @@ import {Drawer, List, ListItemText, ListItem, ListItemIcon, IconButton} from '@m
 import MenuIcon from '@material-ui/icons/Menu'
 import {makeStyles} from '@material-ui/core/styles'
 import {useTheme} from '@material-ui/core/styles'
-import AppBar from '../AppBar'
 
 const DrawerComponent = ()=>{
     //const styledApp = styled.div``;
