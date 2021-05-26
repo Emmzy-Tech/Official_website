@@ -19,6 +19,7 @@ const useStyles= makeStyles(()=>({
     TypographyText:{
         color: 'black',
         fontWeight: 500,
+        fontFamily:['-appleMacSystemFont','sans-serif'].join(','),
         paddingBottom: 40,
         fontSize: '2rem',
         display: "flex",
@@ -41,15 +42,12 @@ const useStyles= makeStyles(()=>({
         [theme.breakpoints.down('sm')]:{
             fontSize: '1rem',
         }
-    },
-    gridCont:{
-    
     }
 }))
 const AbTop = ({location})=>{
     const classes = useStyles()    
     return( 
-            <Grid container className={classes.gridCont}>
+            <Grid container className="gridCont">
                 <Grid item className="gridItem" xs={12}>
                     <MuiThemeProvider theme={theme}>            
                     <Typography variant="h1" gutterBottom className={classes.TypographyText}>Why data maters</Typography>                  

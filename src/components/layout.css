@@ -19,7 +19,8 @@ body {
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
-  background-color: #f7f0eb;
+  background-color: #033017;
+  background-image: url("../images/background.svg");
 }
 article,
 aside,

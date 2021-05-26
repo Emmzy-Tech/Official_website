@@ -22,3 +22,8 @@
                 background-image: url(../../images/landing_bg4.jpg);
                 }
 }
+.example2 {
+    background: url(../../images/logo.svg);
+    background-repeat: no-repeat;
+    background-size: 300px 100px;
+  }

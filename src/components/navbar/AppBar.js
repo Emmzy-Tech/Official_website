@@ -29,14 +29,21 @@ const useStyles= makeStyles((theme)=>({
         justifyContent: 'space-around',        
     },
     link:{
-        color: 'green',
-        listStyle: 'none'
+        color: 'white',
+        listStyle: 'none',
+        fontSize: '1rem',
+        fontWeight: '600',
+        '&:hover':{
+            color: 'black',
+            listStyle: 'none',           
+        },
     },
+  
     logo:{
-        width: '100px',
+        width: '130px',
         position: 'absolute',
         top: '20px',
-        left: '40px'
+        left: '40px',
     }
 }))
 
@@ -52,15 +59,13 @@ export default function ButtonAppBar(){
         <div className="toolbox">
             <Toolbar className={classes.toolBox}>                
                 <Link to="/" className={classes.link}>Home</Link>
-                <Link to="/about" className={classes.link}>ABout Us</Link>
-                <Link to="/page-2" className={classes.link}>Programs</Link>
+                <Link to="/about" className={classes.link}>About Us</Link>
+                <Link to="/programs" className={classes.link}>Programs</Link>
                 <Link to="/about" className={classes.link}>Consulting</Link>
-                <Link to="/contact" className={classes.link}>Contact</Link>
+                <Link to="/contact2" className={classes.link}>Contact</Link>
             </Toolbar>
         </div>
         </AppBar>
     </div>
     )
 }
-
-
