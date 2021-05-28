@@ -119,8 +119,7 @@ const IndexPage = () => {
         <ThemeProvider theme={theme}>
         <Layout>        
           <SEO title="Home" />  
-          <ButtonAppBar />
-            
+          <ButtonAppBar />            
           <LandingComponent />
           <Home2 />
           <Section3 />

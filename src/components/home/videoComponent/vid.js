@@ -18,18 +18,18 @@ const Vid = (props)=>{
         <>
            <Layout>
            <div className="page-wrap">
-           <Grid container spacing={2}>
-           <Grid item md={6} xs={12}>
-                <Paper className={classes.paperplay}>
-            
-                </Paper>
-            </Grid>
-
+            <Grid container spacing={2}>
             <Grid item md={6} xs={12}>
-            <Paper className={classes.paperplay}>        
-            </Paper>
-            </Grid>
-           </Grid> 
+                    <Paper className={classes.paperplay}>
+                
+                    </Paper>
+                </Grid>
+
+                <Grid item md={6} xs={12}>
+                <Paper className={classes.paperplay}>        
+                </Paper>
+                </Grid>
+            </Grid> 
            </div>          
            </Layout> 
         </>

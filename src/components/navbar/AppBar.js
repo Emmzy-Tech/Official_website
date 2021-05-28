@@ -15,6 +15,7 @@ import Drawer from '../navbar/DrawerComponent/drawer'
 import { Height } from '@material-ui/icons'
 import NavLogo from '../../images/Capacity-Bay-4-footer.png'
 
+
 const useStyles= makeStyles((theme)=>({
     appBarTrans:{
         background: 'transparent',
@@ -23,7 +24,12 @@ const useStyles= makeStyles((theme)=>({
             display: 'none'
         }
     },
-    
+    appBarBlock:{
+        boxShadow: 'none',
+        [theme.breakpoints.down('md')]:{
+            display: 'none'
+        }
+    },
     toolBox:{
         display: 'flex',
         justifyContent: 'space-around',        
@@ -51,7 +57,8 @@ export default function ButtonAppBar(){
     const classes = useStyles()
     const theme = useTheme()
 
-    //const isMatch = useMediaQuery(theme.breakpoints.down('md')) 
+    //const isMatch = useMediaQuery(theme.breakpoints.down('md'))
+     const [Nav, setNav] = React.useState(true)
     return(
         <div>
         <AppBar position="absolute" className={classes.appBarTrans}>
