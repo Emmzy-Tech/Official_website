@@ -33,12 +33,18 @@ const useStyles= makeStyles(()=>({
     },
 }))
 const VideoComponent = ({location})=>{
+    function handleClick(){
+        console.log('button clicked')
+    }
     const classes = useStyles()    
     return( 
             <Grid container className={classes.gridCont}>
                 <Grid item className={classes.inside} xs={12} md={6} sm={6}>
                   <img src={obi} className="obiImg"/>
-                  <img src={play} className="playBtn"/>
+                  <img src={play} onClick={handleClick} className="playBtn"/>
+                  <div className="playNow">
+                    <div class="controls"></div>
+                  </div>
                 </Grid>
 
                 <Grid item className={classes.inside2} xs={12} md={6} sm={6}>

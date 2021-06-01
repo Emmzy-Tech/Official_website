@@ -41,7 +41,7 @@
 }
 .gridCont{
         background-color: '#096A3D';
-        background-image: url("../../images/Protruding-Squares.svg");
+        background-image: url("../../images/Protruding-Squares.svg")  ;
 }
 @media(max-width: 786px){
     .itemLower img{

@@ -7,6 +7,7 @@
     position: absolute;
     top: 160px;
     left: 425px;
+    cursor: pointer;
 }
 .rightCont{
     width: 100%;
@@ -18,7 +19,23 @@
 .ptext0, .ptext1, .ptext2{
     color: black;
 }
-
+.playNow{
+    width: 500px;
+    background-color: red;
+    z-index: 3;
+    height: 85%;
+    left: 220px;
+    position: absolute;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.controls{
+    width: 100%;
+    height: 28px;
+    background-color: blue;
+}
 @media(max-width: 786px){
     .obiImg{
         margin-left: 0;
@@ -26,5 +43,11 @@
     .playBtn{
         left: 110px;
         top: 70px;
+    }
+    .playNow{
+        width: 100%;
+        z-index: 3;
+        position: absolute;
+        left: 0;
     }
 }

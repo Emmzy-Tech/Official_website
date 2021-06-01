@@ -19,28 +19,19 @@ const useStyles= makeStyles((theme)=>({
         },   
     },
     heading:{
-        fontSize: '3em',
+        fontSize: '3rem',
         color: 'white',
         fontWeight: '700',
-        maxWidth: '800px',
+        width: '800px',
         [theme.breakpoints.down('md')]:{
-            fontSize: '1rem',
-            marginTop: '70px',
-            width: '400px',
-        },
-        [theme.breakpoints.up('md')]:{
             fontSize: '2rem',
             marginTop: '70px',
-            width: '700px',
-        },
-        [theme.breakpoints.down('sm')]:{
-            fontSize: '1.5rem',
-            paddingLeft: '20px'
+            paddingLeft: '20px',
         }
     },
     h3: {
         color: '#af221f',
-        fontSize: '1.5rem',
+        fontSize: '2rem',
         [theme.breakpoints.down('md')]:{
             paddingLeft: '20px',
         }
@@ -48,7 +39,10 @@ const useStyles= makeStyles((theme)=>({
 }))
 
 const LandingComponent = ({location})=>{
-    const slides = [{first: "Welcome To The Workforce Development Exchange", second: "For US Veterance", id: 1}]
+    const [slides, setSlide] = useState([
+        {first: "Welcome To The Workforce Development Exchange", second: "For US Veterance", id: 1},
+        {first: "Welcome To The Workforce Development Exchange", second: "For US Veterance", id: 1},
+    ])
     
     const [seconds, setSeconds] = useState(0);
     

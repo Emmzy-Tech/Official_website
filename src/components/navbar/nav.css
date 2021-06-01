@@ -25,5 +25,21 @@
   width: 40%;
   height: 80px;
   margin:  0 auto;
-  background-color: transparent;
+  position: relative;
+}
+a.btn{
+  position: absolute;
+  right: 100px;
+  top: 16px;
+  background-color: green;
+  color: white;
+}
+a.btn:hover{
+  color: black;
+  background-color: greenyellow;
+}
+@media(max-width: 786px){
+  a.btn{
+    
+  }
 }

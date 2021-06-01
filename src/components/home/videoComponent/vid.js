@@ -20,14 +20,11 @@ const Vid = (props)=>{
            <div className="page-wrap">
             <Grid container spacing={2}>
             <Grid item md={6} xs={12}>
-                    <Paper className={classes.paperplay}>
-                
-                    </Paper>
-                </Grid>
+                <Paper className={classes.paperplay}></Paper>
+            </Grid>
 
                 <Grid item md={6} xs={12}>
-                <Paper className={classes.paperplay}>        
-                </Paper>
+                    <Paper className={classes.paperplay}></Paper>
                 </Grid>
             </Grid> 
            </div>          

@@ -4,6 +4,9 @@
     /* Just trying to see if my pull request works */
 
 /* Plan the future starts  */
+p{
+    font-family: karla, sans-serif;
+}
 .future{
     background: linear-gradient(90deg,#2a77c7 0,#5ec7df);
     width: 100%;

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import {makeStyles} from '@material-ui/core/styles'
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
@@ -24,7 +24,10 @@ const useStyles= makeStyles((theme)=>({
             display: 'none'
         }
     },
-    appBarBlock:{
+    appBarScroll:{
+        backgroundColor: '#4A4A4A',
+    },
+    appBarMobState:{
         boxShadow: 'none',
         [theme.breakpoints.down('md')]:{
             display: 'none'
@@ -50,6 +53,9 @@ const useStyles= makeStyles((theme)=>({
         position: 'absolute',
         top: '20px',
         left: '40px',
+    },
+    btn:{
+        grow: 1,
     }
 }))
 
@@ -57,11 +63,31 @@ export default function ButtonAppBar(){
     const classes = useStyles()
     const theme = useTheme()
 
-    //const isMatch = useMediaQuery(theme.breakpoints.down('md'))
-     const [Nav, setNav] = React.useState(true)
+     const [Nav, setNav] = useState('appBarScroll')
+     const navRef = React.useRef();
+     navRef.current = Nav     
+   
+     useEffect(() => {
+        const handleScroll = ()=>{
+            const show = window.scrollY > 310
+            if(show){
+                setNav('appBarCroll')
+            }else{
+                setNav('appBarTrans')
+            }
+        }
+
+        document.addEventListener('scroll', handleScroll)
+
+        return() => {
+            document.removeEventListener('scroll', handleScroll)
+        }
+     },[])
+
+
     return(
         <div>
-        <AppBar position="absolute" className={classes.appBarTrans}>
+        <AppBar position="fixed" className={classes[navRef.current]}>
         <img src={NavLogo} className={classes.logo}/>
         <div className="toolbox">
             <Toolbar className={classes.toolBox}>                
@@ -70,8 +96,9 @@ export default function ButtonAppBar(){
                 <Link to="/programs" className={classes.link}>Programs</Link>
                 <Link to="/about" className={classes.link}>Consulting</Link>
                 <Link to="/contact2" className={classes.link}>Contact</Link>
-            </Toolbar>
+            </Toolbar>            
         </div>
+        <a to="#" className="btn">Register</a>
         </AppBar>
     </div>
     )
