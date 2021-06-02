@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="131px" height="185px" viewBox="0 0 131 185" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>building-sun</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Desktop-R4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="2.1-Why-college-matters" transform="translate(-1051.000000, -386.000000)" stroke="#56C2C1" stroke-width="2">
+            <g id="c2.0.d-hero-3rd-level-illustration" transform="translate(0.000000, 120.000000)">
+                <g id="hero-illustration" transform="translate(0.000000, 224.000000)">
+                    <g id="building-sun" transform="translate(1052.000000, 43.000000)">
+                        <g id="building" transform="translate(0.000000, 33.000000)">
+                            <polygon id="Stroke-1" points="0 150 24 150 24 18 0 18"></polygon>
+                            <path d="M19,65 C19,68.866 15.866,72 12,72 C8.134,72 5,68.866 5,65 C5,61.134 8.134,58 12,58 C15.866,58 19,61.134 19,65 Z" id="Stroke-3"></path>
+                            <polygon id="Stroke-4" points="12 0 0 18 24 18"></polygon>
+                            <path d="M10,33 C10,31.619 8.881,30.5 7.5,30.5 C6.119,30.5 5,31.619 5,33 L5,42 L10,42 L10,33 Z" id="Stroke-5"></path>
+                            <path d="M19,33 C19,31.619 17.881,30.5 16.5,30.5 C15.119,30.5 14,31.619 14,33 L14,42 L19,42 L19,33 Z" id="Stroke-6"></path>
+                            <path d="M1,50 L23,50" id="Stroke-7"></path>
+                            <path d="M1,132 L23,132" id="Stroke-8"></path>
+                            <path d="M1,23 L23,23" id="Stroke-9"></path>
+                            <polyline id="Stroke-10" points="12 61 12 65 15 68"></polyline>
+                            <path d="M14,82 C14,80.896 13.104,80 12,80 C10.896,80 10,80.896 10,82 L10,88 L14,88 L14,82 Z" id="Stroke-11"></path>
+                            <path d="M14,101 C14,99.896 13.104,99 12,99 C10.896,99 10,99.896 10,101 L10,107 L14,107 L14,101 Z" id="Stroke-12"></path>
+                            <path d="M14,119 C14,117.896 13.104,117 12,117 C10.896,117 10,117.896 10,119 L10,125 L14,125 L14,119 Z" id="Stroke-13"></path>
+                        </g>
+                        <g id="Group-35" transform="translate(62.000000, 0.000000)">
+                            <path d="M45,33.5 C45,39.8512857 39.8512857,45 33.5,45 C27.1487143,45 22,39.8512857 22,33.5 C22,27.1487143 27.1487143,22 33.5,22 C39.8512857,22 45,27.1487143 45,33.5 Z" id="Stroke-1"></path>
+                            <path d="M34,22 L34,0" id="Stroke-3"></path>
+                            <path d="M34,67 L34,45" id="Stroke-5"></path>
+                            <path d="M29,23 L21,3" id="Stroke-7"></path>
+                            <path d="M46,64 L38,44" id="Stroke-9"></path>
+                            <path d="M38,23 L46,3" id="Stroke-11"></path>
+                            <path d="M21,64 L29,44" id="Stroke-13"></path>
+                            <path d="M45,33 L67,33" id="Stroke-15"></path>
+                            <path d="M0,33 L22,33" id="Stroke-17"></path>
+                            <path d="M42,42 L57,57" id="Stroke-19"></path>
+                            <path d="M10,10 L25,25" id="Stroke-21"></path>
+                            <path d="M44,38 L64,46" id="Stroke-23"></path>
+                            <path d="M3,21 L23,29" id="Stroke-25"></path>
+                            <path d="M25,42 L10,57" id="Stroke-27"></path>
+                            <path d="M57,10 L42,25" id="Stroke-29"></path>
+                            <path d="M23,38 L3,46" id="Stroke-31"></path>
+                            <path d="M64,21 L44,29" id="Stroke-33"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

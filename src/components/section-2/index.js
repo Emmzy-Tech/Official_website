@@ -8,7 +8,14 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import Credit from "../../images/credit.svg"
 import Map from "../../images/map.svg"
 import Ballon from "../../images/ballon.svg"
-function Home2(props) {
+
+
+function Home2() {
+    const [futures, setFuture] = React.useState([
+        {id: 1, img: 'Ballon', alt: 'air balloon icon', title: 'WHY LEARNING MATTERS', body: 'College is worth it. Your future is worth it. You are worth it.', foot: 'Learn how to get to college &#62'},
+        {id: 2, img: 'Learn', alt: 'learn', title: 'PAYING FOR COLLEGE', body: 'There are lots of options available to you. We can help you find them.', foot: 'Learn how to get to college &#62'},
+        {id: 3, img: 'Credit', alt: 'credit', title: 'YOUR COLLEGE ROADMAP', body: 'The path may seem unclear. We can help you find your way.', foot: 'Learn how to get to college &#62'}
+    ])
     return (
         <>
            <section className="future">

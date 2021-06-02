@@ -14,9 +14,9 @@ const useStyle = makeStyles((theme)=>({
             fontSize: '1.7rem',
         },
     },
-    bookimg:{
-        [theme.breakpoints.down('sm')]:{
-            fontSize: '1rem',
+    book:{
+        [theme.breakpoints.up('xs')]:{
+            
         },
       
     // contentButton:{
@@ -30,13 +30,13 @@ const Section3 = (props)=>{
     return(
         <>
             <div className="section3">
-                <Grid container md={6} xs={10} className="content">
+                <Grid container md={6} xs={10} sm={10}className="content">
                     <div className="contentH1">
                         <Typography className={classes.Typography} variant="h3">Your complete college application guide</Typography>
-                        <img src={book}  />
+                        <img src={book}  className='book'/>
                     </div>
                     <div className="contentButtonCont">
-                        <Typography style={{position: 'absolute', marginTop:'20px'}} variant="subtitle2">It’s go time — and we’ll be with you every step of the way.
+                        <Typography style={{position: 'absolute', marginTop:'20px', fontFamily:'karla, sans-serif'}} variant="subtitle2">It’s go time — and we’ll be with you every step of the way.
                         Here’s where you’ll find what you need to take that next step towards a brighter future.</Typography>
                     </div>
                 </Grid>

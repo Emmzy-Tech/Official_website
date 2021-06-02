@@ -18,3 +18,28 @@
   nav .navbar-nav li a{
     color: white !important;
 }
+.top{
+  margin-top: 40px;
+}
+.toolbox{
+  width: 40%;
+  height: 80px;
+  margin:  0 auto;
+  position: relative;
+}
+a.btn{
+  position: absolute;
+  right: 100px;
+  top: 16px;
+  background-color: green;
+  color: white;
+}
+a.btn:hover{
+  color: black;
+  background-color: greenyellow;
+}
+@media(max-width: 786px){
+  a.btn{
+   display: none;
+  }
+}

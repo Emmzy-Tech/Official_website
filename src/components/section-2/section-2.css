@@ -4,6 +4,9 @@
     /* Just trying to see if my pull request works */
 
 /* Plan the future starts  */
+p{
+    font-family: karla, sans-serif;
+}
 .future{
     background: linear-gradient(90deg,#2a77c7 0,#5ec7df);
     width: 100%;
@@ -81,6 +84,11 @@
     background: linear-gradient(-45deg, transparent 30px,#fff 0);
     background-size: 100% 100%;
     background-repeat: no-repeat;
+}
+.flx{
+    display: flex;
+    width: 100%;
+    background-color: red;
 }
 @media (min-width: 1280px){
 .container {

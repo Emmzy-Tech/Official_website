@@ -5,14 +5,15 @@ import {makeStyles} from '@material-ui/core/styles'
 import { Typography } from '@material-ui/core';
 import byc from '../../images/icons/byc.svg'
 import { motion } from "framer-motion"
+import { colors, Grow, useMediaQuery, useTheme, theme } from "@material-ui/core";
 
 const useStyles= makeStyles(()=>({
     byc:{
         position: 'absolute',
-        bottom: 81,
+        bottom: 5,
         left: 100,
         zIndex: 20,
-        width: 50,
+        width: 130,
     },
     listgridColor:{
         listStyle: 'none'
@@ -40,11 +41,11 @@ const Footer = ()=>{
                     </div> 
                     </Grid>
 
-                    <Grid item md={4} xs={10} className={classes.fgrid}>   
+                    <Grid item md={4} xs={12} className={classes.fgrid}>   
                     <div className="con1">
                     <h3>Quick links</h3>
                     
-                    <ul>
+                    <ul className="footer-ul">
                     <li>9701 Apollo Drive suite 301 Largo MD 20774</li>
                     <li>info@capacitybay.org</li>
                     <li>Mon.-Fri.: 10-20 Sun.: 12-16</li>
@@ -66,7 +67,7 @@ const Footer = ()=>{
                     </ul>                 
                     </Grid>                
                 </Grid>
-                <motion.img src={byc} className={classes.byc} animate={{scale: 2}}/>
+       
             </div>
                 <div className="bottomLine">
                     <ul className="flexedBottom">

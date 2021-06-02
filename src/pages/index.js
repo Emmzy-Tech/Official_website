@@ -18,9 +18,10 @@ import { Autorenew } from "@material-ui/icons"
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 import { colors, Grow, useMediaQuery, useTheme } from "@material-ui/core";
 import RecipeReviewCard from '../components/home/cardComponent/card'
-
-
-
+import VideoComponent from '../components/videoSection'
+import LandingComponent from "../components/home/landingComponent"
+import DrawerNav from '../components/navbar/DrawerComponent/drawer'
+import ButtonAppBar from '../components/navbar/AppBar'
 
 
 const useStyles = makeStyles((theme)=>({
@@ -32,12 +33,15 @@ const useStyles = makeStyles((theme)=>({
     fontWeight: 600,    
     position:"absolute",
     top: 540,
-    left: 165,
+    left: 180,
     background: 'linear-gradient(45deg, #042d73, #04befe)',
+    [theme.breakpoints.up('sm')]:{
+      fontSize:'1rem'
+    },
     [theme.breakpoints.down('xs')]:{
-      top: 229,
-      left: 30,
-
+      position: "absolute",
+      left: 59,
+      top: 200
     }
   },
   landingCard:{
@@ -53,22 +57,34 @@ const useStyles = makeStyles((theme)=>({
     position: 'absolute',
     zIndex: 23,
     color: 'white',
-    marginLeft: 20,
+    marginLeft: 60,
     [theme.breakpoints.up('md')]:{
       fontSize: '4.5rem',
-      marginTop: 150
+      marginTop: 100,
+      marginLeft: 20
+    },
+    [theme.breakpoints.down('xs')]:{
+      marginLeft: 50,
+      fontSize: '1.8rem',
+      top: 45,
+      position: 'absolute',
     }
   },
   landingP:{
     position: 'absolute',
-    top: 160,
+    top: 130,
     fontSize: '.79em',
     color: 'white',
-    marginLeft: 20,
+    marginLeft: 25,
     fontWeight: 400,
     [theme.breakpoints.up('md')]:{
       fontSize: '1.3rem',
       marginTop: 260
+    },
+    [theme.breakpoints.down('xs')]:{
+     position: "absolute",
+     top: 110,
+     marginLeft: '50px',
     }
   },
   container:{
@@ -102,22 +118,15 @@ const IndexPage = () => {
        return (         
         <ThemeProvider theme={theme}>
         <Layout>        
-          <SEO title="Home" />       
-            <Grid container className={classes.cont}>
-            <RecipeReviewCard/>
-            <img style={{width: '100%'}}src={landing}/>  
-            <div className="container">             
-              <Grid item xs={12} md={8} className="">                           
-              <h1 className={classes.Typography}>Your future <br/>Starts here</h1>
-              <p className={classes.landingP}>Apply to college for the first time or transfer <br />to complete your degree. Navigate your entire <br />college application journey with Common App.</p>          
-              <Button className={classes.root} color="primary">Register Now</Button>
-              </Grid>  
-              
-              </div>            
-            </Grid> 
+          <SEO title="Home" />  
+          <ButtonAppBar />            
+          <LandingComponent />
           <Home2 />
           <Section3 />
           <Blog />
+
+          <VideoComponent />
+
         </Layout>
         </ThemeProvider>
         )
