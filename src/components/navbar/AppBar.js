@@ -21,21 +21,18 @@ const useStyles= makeStyles((theme)=>({
         background: 'transparent',
         boxShadow: 'none',
         [theme.breakpoints.down('md')]:{
-            display: 'none'
+            width: '100%',
         }
     },
     appBarScroll:{
         backgroundColor: '#4A4A4A',
     },
-    appBarMobState:{
-        boxShadow: 'none',
-        [theme.breakpoints.down('md')]:{
-            display: 'none'
-        }
-    },
     toolBox:{
         display: 'flex',
-        justifyContent: 'space-around',        
+        justifyContent: 'space-around',
+        [theme.breakpoints.down('md')]:{
+            display: 'none'
+        }        
     },
     link:{
         color: 'white',
@@ -69,25 +66,25 @@ export default function ButtonAppBar(){
    
      useEffect(() => {
         const handleScroll = ()=>{
+            //The rule
             const show = window.scrollY > 310
+            // The command to the rule
             if(show){
                 setNav('appBarCroll')
             }else{
                 setNav('appBarTrans')
             }
         }
-
+        // Event listener
         document.addEventListener('scroll', handleScroll)
-
-        return() => {
-            document.removeEventListener('scroll', handleScroll)
-        }
+        // Remove Event listener
+        return() => {document.removeEventListener('scroll', handleScroll)}
      },[])
 
 
     return(
         <div>
-        <AppBar position="fixed" className={classes[navRef.current]}>
+        <AppBar position="fixed" className={classes[Nav]}>
         <img src={NavLogo} className={classes.logo}/>
         <div className="toolbox">
             <Toolbar className={classes.toolBox}>                

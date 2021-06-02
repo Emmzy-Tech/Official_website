@@ -40,6 +40,6 @@ a.btn:hover{
 }
 @media(max-width: 786px){
   a.btn{
-    
+   display: none;
   }
 }

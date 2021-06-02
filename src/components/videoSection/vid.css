@@ -45,9 +45,10 @@
         top: 70px;
     }
     .playNow{
-        width: 100%;
+        width: 95%;
         z-index: 3;
         position: absolute;
         left: 0;
+        display: none;
     }
 }
