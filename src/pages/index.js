@@ -124,7 +124,9 @@ const IndexPage = () => {
           <Home2 />
           <Section3 />
           <Blog />
+
           <VideoComponent />
+
         </Layout>
         </ThemeProvider>
         )
